@@ -1,0 +1,8 @@
+client_socket = socket.socket(socket.AF_INET,socket.SOCK_STREAM) )-> we create a object of socket “client_socket”.
+AF_INET means it is a Ipv4 address
+SOCK_STREAM means that it is a TCP socket.
+host_ip = ‘<local address>’-> specifies host ip address.
+client_socket.connect((host_ip,port))-> for connecting to the remote socket.
+data = b""-> b' or 'B' produces an instance of the bytestype
+payload_size = struct.calcsize("Q")
+
